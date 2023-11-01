@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="343.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lw1.UsertableController">
+   <children>
+      <TableView fx:id="tableUsers" layoutX="14.0" layoutY="8.0" prefHeight="279.0" prefWidth="145.0">
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="145.99993896484375" text="username" />
+        </columns>
+      </TableView>
+      <Button layoutX="183.0" layoutY="52.0" mnemonicParsing="false" onAction="#register" text="добавить пользователя" />
+      <Button fx:id="btnOpen" layoutX="14.0" layoutY="303.0" mnemonicParsing="false" onAction="#changeScenetoSelectedUser" prefHeight="25.0" prefWidth="145.0" text="открыть" />
+      <TextField fx:id="newusername" layoutX="180.0" layoutY="14.0" promptText="new username" />
+      <Button fx:id="backbtn" layoutX="281.0" layoutY="303.0" mnemonicParsing="false" onAction="#back" text="назад" />
+   </children>
+</AnchorPane>

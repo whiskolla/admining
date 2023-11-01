@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lw1.AdminPageController">
+    <children>
+        <Label layoutX="8.0" prefHeight="78.0" prefWidth="180.0" text="Admin Page" textOverrun="WORD_ELLIPSIS">
+            <font>
+                <Font name="Javanese Text" size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="changePswdbtn" layoutX="19.0" layoutY="216.0" mnemonicParsing="false" onAction="#changePSWD" prefHeight="41.0" prefWidth="129.0" text="сменить пароль" textOverrun="CLIP">
+            <font>
+                <Font name="Javanese Text" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="close" layoutX="215.0" layoutY="216.0" mnemonicParsing="false" onAction="#close" prefHeight="41.0" prefWidth="129.0" text="закрыть программу">
+            <font>
+                <Font name="Javanese Text" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="19.0" layoutY="93.0" text="старый пароль" />
+        <PasswordField fx:id="oldpswd" layoutX="151.0" layoutY="89.0" prefHeight="25.0" prefWidth="194.0" />
+        <Label layoutX="19.0" layoutY="134.0" text="новый пароль" />
+        <PasswordField fx:id="newpswd" layoutX="151.0" layoutY="130.0" prefHeight="25.0" prefWidth="194.0" />
+        <Label layoutX="19.0" layoutY="173.0" text="повторить пароль" />
+        <PasswordField fx:id="newpswd2" layoutX="151.0" layoutY="169.0" prefHeight="25.0" prefWidth="194.0" />
+      <Button fx:id="utbtn" layoutX="185.0" layoutY="24.0" mnemonicParsing="false" onAction="#userTable" prefHeight="41.0" prefWidth="82.0" text="user table" textOverrun="CLIP">
+         <font>
+            <Font name="Javanese Text" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="logbtn" layoutX="276.0" layoutY="24.0" mnemonicParsing="false" onAction="#log" prefHeight="17.0" prefWidth="68.0" text="выйти" textOverrun="CLIP">
+         <font>
+            <Font name="Javanese Text" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

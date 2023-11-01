@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lw1.UserPageController">
+    <children>
+        <Label layoutX="52.0" text="User Page" textOverrun="WORD_ELLIPSIS">
+            <font>
+                <Font name="Javanese Text" size="32.0" />
+            </font>
+        </Label>
+        <Button layoutX="43.0" layoutY="216.0" mnemonicParsing="false" onAction="#changePSWD" prefHeight="41.0" prefWidth="113.0" text="сменить пароль" textOverrun="CLIP">
+            <font>
+                <Font name="Javanese Text" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="close" layoutX="194.0" layoutY="216.0" mnemonicParsing="false" onAction="#close" prefHeight="41.0" prefWidth="129.0" text="закрыть программу">
+            <font>
+                <Font name="Javanese Text" size="12.0" />
+            </font>
+        </Button>
+      <Label layoutX="43.0" layoutY="89.0" text="старый пароль" />
+      <PasswordField fx:id="oldpswd" layoutX="175.0" layoutY="85.0" />
+      <Label layoutX="43.0" layoutY="130.0" text="новый пароль" />
+      <PasswordField fx:id="newpswd" layoutX="175.0" layoutY="126.0" />
+      <Label layoutX="43.0" layoutY="169.0" text="повторить пароль" />
+      <PasswordField fx:id="newpswd2" layoutX="175.0" layoutY="165.0" />
+      <Button fx:id="logbtn" layoutX="210.0" layoutY="24.0" mnemonicParsing="false" onAction="#log" prefHeight="41.0" prefWidth="113.0" text="выйти" textOverrun="CLIP">
+         <font>
+            <Font name="Javanese Text" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lim" layoutX="43.0" layoutY="186.0" text="парольные ограничения: Наличие букв и знаков арифметических операций" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Javanese Text" size="8.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
